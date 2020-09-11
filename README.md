@@ -4,7 +4,7 @@ Purpose of this script is to copy one LUN/snap to another on single InfiniBox vi
 ddpt description
 http://sg.danny.cz/sg/ddpt.html
 
-Run example
+Sample run below, it looks much better as raw file
 
 root@sales-demo-05:/home/vasilyk# blockdev --getsz /dev/mapper/mpathfs
 2516582400
