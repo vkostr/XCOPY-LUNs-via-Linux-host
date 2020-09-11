@@ -39,12 +39,6 @@ root@sales-demo-05:/home/vasilyk# umount /xcopy_source
 root@sales-demo-05:/home/vasilyk# mount /dev/mapper/mpathfr /xcopy_dest/
 mount: /xcopy_dest: wrong fs type, bad option, bad superblock on /dev/mapper/mpathfr, missing codepage or helper program, or other error.
 root@sales-demo-05:/home/vasilyk# cat xcopy.sh
-#!/bin/bash
-# first parameter = input device
-# second parameter = output device
-# device size must be the same
-# changing bs variable can reduce speed, max speed should be at bs=32768. 32768 is max setting, lower settings should be calculated dividing by 2
-
 bs=32768
 s=`blockdev --getsz $1`
 i=0
